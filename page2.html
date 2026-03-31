@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Art Hub | Page 2</title>
+  <style>
+    :root { --base:#10131a; --text:#f4f4f8; --riff:#82c5ff; --card:rgba(255,255,255,0.1); }
+    body { margin:0; font-family:'Segoe UI',Tahoma,Verdana,sans-serif; background: linear-gradient(110deg, #13243e 0%, #0b1828 65%, #13273f 100%); color: var(--text); }
+    .nav { display:flex; justify-content:center; gap:0.8rem; padding:1.2rem; }
+    .nav a { text-decoration:none; background: rgba(248,248,252,0.12); color:#f0f8ff; border:1px solid rgba(220,220,255,0.4); border-radius:10px; padding:0.5rem 0.9rem; font-weight:600; }
+    .nav a:hover { background:#82c5ff; color:#072141; }
+    .layout { max-width:1024px; margin:0 auto; padding:1rem; }
+    h1 { margin:0 0 0.4rem; }
+    .story { background:var(--card); border:1px solid rgba(140, 172, 219, 0.45); border-radius:14px; padding:1rem; margin-bottom:1rem; backdrop-filter: blur(5px); }
+    .story h2 { margin:0 0 0.6rem; }
+    .story p { margin: 0 0 1rem; line-height:1.6; }
+    .story .meta { font-size:0.88rem; color:#b0c8dd; }
+    .hero img { width:100%; border-radius:14px; border:1px solid rgba(255,255,255,0.25); }
+    .btn { display:inline-block; margin-top:0.6rem; text-decoration:none; padding:0.55rem 1rem; border-radius:10px; border:1px solid #9ac9e8; background:#82c5ff; color:#072141; font-weight:700; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Art Stories</a>
+    <a href="page3.html">Visual Gallery</a>
+  </nav>
+  <section class="layout">
+    <h1>Art Stories</h1>
+    <p>On this page, each story pulls a random art idea from the web, mixing street art and digital creativity into quick reading pieces.</p>
+
+    <article class="story">
+      <h2>1. Neon Street Mural Discovery</h2>
+      <p class="meta">Source: Random unsplash search for street art (neon)</p>
+      <div class="hero"><img src="https://images.unsplash.com/photo-1521620831294-392fd307d49d?auto=format&fit=crop&w=1200&q=80" alt="Neon street art"></div>
+      <p>Neon street murals are becoming a city-night signature. This style uses fluorescent tones and bold geometric forms to evoke kinetic motion, typically painted across old brick walls.</p>
+    </article>
+
+    <article class="story">
+      <h2>2. Analog Brush Layers</h2>
+      <p class="meta">Source: Unsplash acrylic textures, painterly technique</p>
+      <div class="hero"><img src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?auto=format&fit=crop&w=1200&q=80" alt="Texture layer painting"></div>
+      <p>Artistic layering is about letting previous brush strokes remain partially visible. Transparency over texture fosters depth and invites the viewer to decipher hidden patterns.</p>
+    </article>
+
+    <article class="story">
+      <h2>3. Glitch & Generative Art</h2>
+      <p class="meta">Source: Unsplash abstract gradients</p>
+      <div class="hero"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80" alt="AI-inspired color gradient"></div>
+      <p>Generative art bridges data and visuals. In this piece, algorithmic color distribution and flowing curves create a modern visual impression of motion and depth.</p>
+    </article>
+
+    <p style="font-size:0.98rem; color:#e8f1ff;">Tip: Refresh the page and replace image URLs with your own artwork to make a personal, unique gallery.</p>
+    <a href="page3.html" class="btn">Next: Visual Gallery</a>
+  </section>
+</body>
+</html>
