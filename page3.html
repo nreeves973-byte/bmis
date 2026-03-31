@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Art Hub | Page 3</title>
+  <style>
+    body {
+      margin:0;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:#f5f7ff;
+      background: radial-gradient(circle at top left, #423a86 0%, #0f1430 45%, #070a16 100%);
+    }
+    .nav { display:flex; justify-content:center; gap:0.8rem; padding:1.1rem; }
+    .nav a { color:#edf2ff; text-decoration:none; background: rgba(255,255,255,0.15); border-radius: 10px; border:1px solid rgba(233,242,255,0.25); padding:0.5rem 0.9rem; font-weight:600; }
+    .nav a:hover { background:#6f8dec; color:#081428; }
+    .wrap { max-width:1200px; margin:0 auto; padding:1rem; }
+    .title { text-align:center; margin-bottom:1rem; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .card { background: rgba(16,28,49,0.70); border:1px solid rgba(122,153,218,0.25); border-radius:12px; overflow:hidden; backdrop-filter: blur(6px); }
+    .card img { width:100%; height: 180px; object-fit:cover; display:block; }
+    .card h3 { font-size:1.05rem; margin:0.8rem 0 0.4rem; color:#eff8ff; padding:0 0.8rem; }
+    .card p { margin:0 0 1rem; color:#cddff8; padding:0 0.8rem; font-size:0.93rem; }
+    footer { text-align:center; margin-top: 1.3rem; color:#dbe4ff; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Art Stories</a>
+    <a href="page3.html">Visual Gallery</a>
+  </nav>
+
+  <div class="wrap">
+    <div class="title">
+      <h1>Visual Gallery</h1>
+      <p>Three curated visual art pieces with short info. All images via Unsplash (example "random web-sourced art").</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1494178272630-070c4c8a3d3d?auto=format&fit=crop&w=800&q=80" alt="Contemporary sculpture">
+        <h3>Piece 1: Lunar Light Sculpture</h3>
+        <p>Textural installation art in a gallery space, combining lights and cast shadows for a calm nocturnal effect.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?auto=format&fit=crop&w=800&q=80" alt="Nature pixels">
+        <h3>Piece 2: Nature Pixel Collage</h3>
+        <p>Mixed-media collage blending photographic flora with digital pixel motifs to comment on analog/digital overlap.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80" alt="Monochrome light pattern">
+        <h3>Piece 3: Monochrome Light Patterns</h3>
+        <p>Minimalist monochrome patternos exploring how light geometry changes perception across planes.</p>
+      </article>
+    </div>
+
+    <footer>
+      <p>Use this design as an art showcase template. Replace pictures with your own artwork or an API feed for real-time gallery updates.</p>
+    </footer>
+  </div>
+</body>
+</html>
