@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Art Hub | Page 1</title>
+  <style>
+    :root {
+      --bg1: #051937;
+      --bg2: #2e8b57;
+      --text: #f7f7f7;
+      --accent: #ffc15e;
+      --card: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--bg1) 0%, #134e5e 50%, var(--bg2) 100%);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    header {
+      padding: 2rem 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 3rem); }
+    header p { color: #dcdcdc; margin: 0.5rem auto 1.5rem; max-width: 650px; }
+    .nav { display: inline-flex; gap: 0.7rem; }
+    .nav a {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    .nav a:hover { background: var(--accent); color: #1d1d1d; border-color: #f2bf64; }
+    main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 1rem;
+      backdrop-filter: blur(8px);
+    }
+    .card img { width: 100%; border-radius: 12px; margin-bottom: 0.7rem; }
+    .card h3 { margin: 0 0 0.5rem; color: #fff; }
+    .card p { margin: 0; color: #eee; }
+    footer { text-align: center; padding: 1.5rem; font-size: 0.95rem; color: #dde; }
+    .cta { display: inline-flex; gap: .6rem; align-items:center; margin-top: 1.2rem; }
+    .cta a { font-weight: 700; text-decoration: none; color: #051937; background: #ffc15e; border-radius: 10px; padding: 0.7rem 1.1rem; border: 1px solid #ffb347; }
+    .header-art { max-width: 780px; margin: 0.6rem auto 1.4rem; }
+    .header-art img { width: 100%; border-radius: 16px; border: 2px solid rgba(255,255,255,0.4); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Art Explorers Hub 🌟</h1>
+    <p>Three pages of curated visual art discoveries and creative stories, randomly inspired by the web's best modern art, street photography, and generative design.
+    </p>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Art Stories</a>
+      <a href="page3.html">Visual Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="header-art">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" alt="Abstract gradient drips">
+      <p style="color:#ebf3ff; font-weight:600; margin: 0.7rem 0 0;">Featured: Vibrant digital paint expression inspired by the modern mixed-media scene.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518914780258-7cfade2f46df?auto=format&fit=crop&w=800&q=80" alt="Street art mural">
+        <h3>Street Art Vibes</h3>
+        <p>A colorful mural in an urban neighborhood, capturing spontaneous public art culture. Artists often embed social messages with spray-paint geometry and human silhouettes.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?auto=format&fit=crop&w=800&q=80" alt="Acrylic paint close up">
+        <h3>Modern Brushwork</h3>
+        <p>Close-up acrylic textures from a studio workbench. Pigments and brushstrokes tell the story of experimentation with gradients and vivid contrast.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1515638285819-8f8674cbb4f8?auto=format&fit=crop&w=800&q=80" alt="3d generative curves">
+        <h3>Generative Geometry</h3>
+        <p>AI-driven generative art uniforms real mathematics and futuristic color palettes to produce flowing, kaleidoscopic visuals.</p>
+      </article>
+    </section>
+
+    <section style="margin-top: 1.8rem; background: rgba(0,0,0,0.22); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:1.1rem;">
+      <h2 style="margin-top:0;">Quick Facts About this Art</h2>
+      <p>All images are public from Unsplash and used for inspiration. This page explores creative styles: street murals, studio abstracts, and digital generative composition.</p>
+      <p style="color:#fff9; font-size:.95rem;">Tip: Try replacing image URLs with your own art assets from an API or local pictures to personalize the gallery.</p>
+      <div class="cta"><span>➡️</span><a href="page2.html">Continue to Page 2: Art Stories</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built in your folder: <strong>index.html</strong>. Navigate the three-page experience to explore art themes.</p>
+  </footer>
+</body>
+</html>
+ 
